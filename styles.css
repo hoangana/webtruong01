@@ -1,0 +1,441 @@
+/* Định dạng chung cho toàn bộ trang */
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+
+/* Định dạng phần header */
+header {
+    background-color: #f4f4f5; 
+    color: white; 
+    padding: 10px 0; 
+}
+
+/* Định dạng logo */
+.logo img {
+    display: block; 
+    margin: 0; 
+    width: 400px; 
+    height: auto; 
+}
+
+/* Định dạng menu điều hướng */
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: left; 
+    padding: 0; 
+    margin: 0; 
+    margin-left: 240px; 
+}
+
+nav ul li {
+    margin: 0 10px; /* Khoảng cách giữa các mục menu */
+}
+
+nav ul li a {
+    color: #003366; 
+    text-decoration: none; /*  gạch chân  */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+/* Định dạng vùng chứa banner và quick-access */
+.banner-container {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.banner {
+    width: 80%; 
+    height: 400px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.banner-trangchu img {
+    width: 95%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+/* Định dạng cho phần quick-access */
+.quick-access {
+    width: 20%; 
+    margin-left: 2%; 
+    padding: 20px; 
+}
+
+.quick-access a {
+    display: block;
+    margin: 5px 0;
+    color: #003366;
+    text-decoration: none;
+}
+
+.quick-access a:hover {
+    text-decoration: underline;
+}
+.lienketphai-grid { display: grid; }
+
+.lienketphai-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+.lienketphai {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+}
+
+.lienketphai-icon img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.lienketphai-p a {
+    color: #003366; 
+    text-decoration: none; 
+}
+
+.lienketphai-p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Định dạng phần thông tin */
+.info {
+    display: flex; 
+    justify-content: left; 
+    padding: 20px; 
+    margin-left: 9%;
+}
+
+.info-item img {
+    max-width: 97%; 
+    height: auto; 
+}
+
+/* Định dạng phần bên aside */
+aside {
+    display: flex; 
+    flex-direction: column; 
+    padding: 20px; 
+}
+
+/* Định dạng phần tin tức */
+.news {
+    padding: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    margin-top: 20px; 
+}
+.news-item img {
+    width: 80%; 
+    height: 400px; 
+    overflow: hidden; 
+    position: relative;
+    object-fit: cover; 
+    object-position: top;
+}
+
+.news h2, .news h3 {
+    margin: 0; 
+}
+
+.news p {
+    margin-top: 10px; 
+}
+
+/* Định dạng phần footer */
+footer {
+    background-color: #003366;
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+/* Định dạng từng phần trong footer */
+.footer-section {
+    margin: 10px; 
+    flex-basis: calc(33.333% - 20px); 
+}
+
+.footer-section h2 {
+    font-size: 1.2em; 
+}
+
+.footer-section p {
+    margin: 5px 0; 
+}
+
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-section a:hover {
+    text-decoration: underline; 
+}
+
+/* Định dạng các biểu tượng mạng xã hội */
+.social-media-icons a {
+    color: white; 
+    font-size: 1.5em; 
+    margin: 0 10px; 
+}
+
+.social-media-icons a:hover {
+    color: #ffdd00;
+}
+ 
+  
+
+.hero-section-admissions { 
+    background: url('img/tuyensinh\(1\).png') no-repeat center center/cover; 
+    height: 800px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; text-align: 
+    center; position: relative; 
+    z-index: 1; 
+} 
+
+
+.admissions-info, .programs, .scholarships {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admissions-info h2, .programs h2, .scholarships h2 {
+    color: #004080;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admissions-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admissions-info ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.admissions-info ul li a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.admissions-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.program {
+    margin-bottom: 20px;
+}
+
+.program h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.program p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.scholarships p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
+.programs img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+}
+
+.structure {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    min-height: 100vh; 
+}
+
+.structure img {
+    max-width: 100%; 
+    height: auto;
+}
+
+
+.about-us { 
+    margin: 20px auto;
+    max-width: 1200px; 
+    padding: 20px; 
+} 
+.about-us article { 
+    margin-bottom: 40px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+} 
+.about-us h2 { 
+    color: #004080; 
+    font-size: 1.8em; 
+    margin-bottom: 10px; 
+} 
+.about-us p { 
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: #333; 
+} 
+.about-us img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+} 
+    .mission-values 
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .value-item {
+        flex: 1 1 30%;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+.value-item:hover {
+        transform: translateY(-10px);
+    }
+    
+.value-item img {
+        height: 60px;
+        margin-bottom: 10px;
+}
+    
+.value-item h3 {
+        color: #004080;
+        margin-top: 10px;
+        font-size: 1.5em;
+}
+    
+.value-item p {
+        color: #666;
+        font-size: 1.1em;
+}
+.mission-values a{
+    text-decoration: none; 
+       
+}
+.mission-values a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* Định dạng phần tin tức */
+.news {
+    padding: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    margin-top: 20px; 
+}
+
+.news h2 {
+    margin: 0; 
+    font-size: 3em; 
+    color: #003366; 
+    margin-left:40% ;
+}
+
+.news-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.news-item {
+    background-color: #f9f9f9; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+}
+
+
+
+.news-item h3 {
+    margin: 10px 0; 
+    font-size: 1.5em; 
+    color: #003366; 
+}
+
+.news-item p {
+    font-size: 1em; 
+    color: #666; 
+}
+
+.news-item a {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #003366; 
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.news-item a:hover {
+    background-color: #0055a5; 
+}
+.news-item img {
+    width: 1200px; 
+    height: 700px; 
+    object-fit: contain; 
+    object-position: center; 
+    display: block;
+    margin: 0 auto; 
+}
